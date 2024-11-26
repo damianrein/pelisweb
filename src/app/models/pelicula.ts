@@ -4,5 +4,6 @@ export interface Pelicula{
     overview: string,
     vote_count: number,
     vote_average: number,
-    poster_path: string
+    poster_path: string,
+    [key: string]: any; 
 }
