@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Pelicula } from 'src/app/models/pelicula';
 
 @Component({
   selector: 'app-card',
@@ -8,7 +9,9 @@ import { Router } from '@angular/router';
 })
 export class CardComponent implements OnInit {
 
-@Input() pelicula: any;
+
+  @Input()
+  pelicula!: Pelicula;
 
 constructor(private router: Router) {}
 
