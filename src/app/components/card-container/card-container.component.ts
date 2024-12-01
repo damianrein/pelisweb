@@ -8,6 +8,12 @@ import { ApiService } from 'src/app/services/api.service';
   styleUrls: ['./card-container.component.css']
 })
 export class CardContainerComponent implements OnInit {
+ /*
+  constructor(){}
+  ngOnInit(): void {
+    
+  }
+ */
   peliculas: Pelicula[] = []; 
 
   constructor(private apiService: ApiService) {}
@@ -22,4 +28,5 @@ export class CardContainerComponent implements OnInit {
       error: (error) => console.error('Error al cargar películas:', error),
     });
 }
+
 }

@@ -12,10 +12,16 @@ export class ApiService {
 
   constructor(private http: HttpClient) {}
 
+/*
   fetchPeliculas(): Observable<any> {
     const url = `${this.baseUrl}/movie/popular?api_key=${this.apiKey}`;
     return this.http.get<any>(url);
   }
+*/
+fetchPeliculas(): Observable<any> {
+  const url = `https://api.themoviedb.org/3/movie/popular?api_key=${this.apiKey}`;
+  return this.http.get<any>(url);
+}
 
   fetchDetallePelicula(id: number): Observable<any> {
     const url = `${this.baseUrl}/movie/${id}?api_key=${this.apiKey}`;

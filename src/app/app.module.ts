@@ -8,6 +8,7 @@ import { DetailMovieComponent } from './pages/detail-movie/detail-movie.componen
 import { ErrorPageComponent } from './pages/error-page/error-page.component';
 import { CardComponent } from './components/card/card.component';
 import { CardContainerComponent } from './components/card-container/card-container.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CardContainerComponent } from './components/card-container/card-contain
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
